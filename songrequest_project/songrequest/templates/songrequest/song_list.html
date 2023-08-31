@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Song List</title>
+</head>
+<body>
+    <h1>Song List</h1>
+    <ul>
+        {% for song_request in song_requests %}
+            <li>{{ song_request.song }} by {{ song_request.artist }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'song_request' %}">Request Another Song</a>
+</body>
+</html>

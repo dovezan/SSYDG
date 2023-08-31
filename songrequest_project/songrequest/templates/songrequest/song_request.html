@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Song Request</title>
+    <link rel="stylesheet" href="static/css/css.css" type="text/css">
+</head>
+<body>
+    <div class="navigator">
+        <li>
+            <ul>
+                <img src="ccssyzx.webp" alt="" height="50px">
+        </ul>
+        </li>
+    </div>
+<div>
+    <h1>Song Request</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Request Song</button>
+    </form>
+    <a href="{% url 'song_list' %}">View Song List</a>
+</div>
+</body>
+</html>

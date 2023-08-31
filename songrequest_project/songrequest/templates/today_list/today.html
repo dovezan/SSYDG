@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+</head>
+<body>
+    <p>Schedule</p>
+    <ul>
+        {% for song_group in song_groups %}
+        <div class="group">
+            {% for song in song_group %}
+                {% if forloop.first %}
+                    <li><strong>Week {{ song.week }}</strong></li>
+                {% endif %}
+                <li>{{ song.song }} - {{ song.artist }} - {{ song.timestamp }}</li>
+            {% endfor %}
+        </div>
+        {% endfor %}
+        <div>
+            <a herf="dovezan.org.cn/diange/request">点歌</a>
+            <a herf="dovezan.org.cn/diange/list">查看列表</a>
+        </div>
+    </ul>
+</body>
+</html>
+
+
+
+
