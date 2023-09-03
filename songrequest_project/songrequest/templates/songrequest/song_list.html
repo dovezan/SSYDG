@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Song List</title>
+    <title>长春市实验中学缔声广播站点歌平台</title>
+    <link rel="stylesheet" href="/static/diange/css/css.css" type="text/css">
 </head>
+<body id="bg">
+    <div class="navigator">
+        <li>
+                <img src="/static/diange/img/ccssy.png" alt="" height="100px">
+                <img src="/static/diange/img/gbz.png" height="100px">
+        </li>
+        <h1>长春市实验中学缔声广播站点歌平台</h1>
+    </div>
+<div>
 <body>
-    <h1>Song List</h1>
+    <div class="kuang">
+    <h1>曲库</h1>
     <ul>
         {% for song_request in song_requests %}
             <li>{{ song_request.song }} by {{ song_request.artist }}</li>
         {% endfor %}
     </ul>
-    <a href="{% url 'song_request' %}">Request Another Song</a>
+
+<div class="link">
+    <a href="{% url 'song_request' %}">点另一首</a>
+    <a href="http://dovezan.org.cn/diange">排卡表</a> 
+   </div>
+</div>
 </body>
 </html>

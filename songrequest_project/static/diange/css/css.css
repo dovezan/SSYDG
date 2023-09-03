@@ -1,0 +1,78 @@
+.navigator {
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navigator li {
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.login-form {
+    width: 80%; /* 设置表单的宽度，根据需要调整 */
+    margin: 0 auto; /* 使用auto来水平居中 */
+    text-align: center; /* 内部文本水平居中 */
+    padding: 20px; /* 可选的内边距，根据需要调整 */
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3d5245;
+}
+
+.login-form button {
+    margin: 6px 0;
+    height: 36px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 0 14px;
+    color: #3d5245;
+}
+.navigator-body {
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+.navigator li strong{
+    line-height: 50px;
+}
+
+body{
+    padding: auto;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#bg{
+    background-image:  url("/static/diange/img/ccssy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.link{
+    align-self: auto;
+}
+#song{
+    list-style: none;
+}
+#week{
+    list-style: none;
+}
+.kuang {
+    width: 80%;
+    background: rgb(196, 196, 196);
+    opacity: 0.84;
+    text-align: center;
+    margin: 0 auto; /* 添加这一行 */
+    display: block; /* 添加这一行 */
+}

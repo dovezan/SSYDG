@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule</title>
+    <title>长春市实验中学缔声广播站点歌平台</title>
+    <link rel="stylesheet" href="/static/diange/css/css.css" type="text/css">
 </head>
+<body id="bg">
+    <div class="navigator">
+        <li>
+            <img src="/static/diange/img/ccssy.png" alt="" height="100px">
+            <img src="/static/diange/img/gbz.png" height="100px">
+    </li>
+    <h1>长春市实验中学缔声广播站点歌平台</h1>
+    </div>
+<div>
 <body>
-    <p>Schedule</p>
-    <ul>
+    <div class="kuang">
+    <h1>排卡表</h1>   
+    <li>
         {% for song_group in song_groups %}
-        <div class="group">
+        
             {% for song in song_group %}
                 {% if forloop.first %}
-                    <li><strong>Week {{ song.week }}</strong></li>
+                    <li id="week"><strong>第{{ song.week }}天播放</strong></li>
                 {% endif %}
-                <li>{{ song.song }} - {{ song.artist }} - {{ song.timestamp }}</li>
+                <li id="song">{{ song.song }} - {{ song.artist }} - {{ song.timestamp }}</li>
             {% endfor %}
-        </div>
         {% endfor %}
-        <div>
-            <a herf="dovezan.org.cn/diange/request">点歌</a>
-            <a herf="dovezan.org.cn/diange/list">查看列表</a>
+        <div class="link">
+            <a href="http://dovezan.org.cn/diange/request">点歌</a>
+            <a href="http://dovezan.org.cn/diange/list">查看列表</a>
         </div>
-    </ul>
+    </li>
+    </div>
 </body>
 </html>
 

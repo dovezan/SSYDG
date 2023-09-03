@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Song Request</title>
-    <link rel="stylesheet" href="static/css/css.css" type="text/css">
+    <title>长春市实验中学缔声广播站点歌平台</title>
+    <link rel="stylesheet" href="/static/diange/css/css.css" type="text/css">
 </head>
-<body>
-    <div class="navigator">
-        <li>
-            <ul>
-                <img src="ccssyzx.webp" alt="" height="50px">
-        </ul>
-        </li>
-    </div>
-<div>
-    <h1>Song Request</h1>
-    <form method="post">
+<body id="bg">
+<div class="navigator">
+    <li>
+        <img src="/static/diange/img/ccssy.png" alt="" height="100px">
+        <img src="/static/diange/img/gbz.png" height="100px">
+</li>
+<h1>长春市实验中学缔声广播站点歌平台</h1>
+<div class="kuang">
+    <div class="container">
+
+    <form method="post" class="login-form">
+            <h2>点歌！别瞎点！</h2>
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Request Song</button>
+        <button type="submit">点（QwQ）</button>
     </form>
-    <a href="{% url 'song_list' %}">View Song List</a>
+</div >
+    <div class="link">
+    <a href="{% url 'song_list' %}">曲库</a>
+        <a href="http://dovezan.org.cn/diange">排卡表</a>
+    </div>
 </div>
 </body>
 </html>
