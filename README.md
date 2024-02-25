@@ -1,2 +1,2 @@
 # SSYDG
-已更新第二版
+Now rebuilding on Java Springboot
